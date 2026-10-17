@@ -1,18 +1,14 @@
 {
-  "name": "God's Eye View — Android browser",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-24-bookworm",
+  "name": "God's Eye View Codespaces",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-24",
   "forwardPorts": [
     4173
   ],
   "portsAttributes": {
     "4173": {
-      "label": "God's Eye View (private)",
-      "onAutoForward": "openBrowser",
+      "label": "God's Eye View",
+      "onAutoForward": "notify",
       "visibility": "private"
     }
-  },
-  "postCreateCommand": "npm ci",
-  "remoteEnv": {
-    "PORT": "4173"
   }
 }
